@@ -1,6 +1,6 @@
 # DevOps Pipeline Setup
 
-### Install chef.io workstation on main server
+## Install chef.io workstation on main server
 Download chef.io package
 ```bash
 sudo su
@@ -17,7 +17,7 @@ which chef
 chef -v
 ```
 
-### copy chef-repo and node keys to server
+## copy chef-repo and node keys to server
 check files
 ```bash
 ls
@@ -27,7 +27,7 @@ Unzip chef-repo
 unzip chef-repo.zip
 ```
 
-### Connect Nodes to Chef Server
+## Connect Nodes to Chef Server
 copy key to chef-repo
 ```bash 
 cp key1.key chef-repo/
