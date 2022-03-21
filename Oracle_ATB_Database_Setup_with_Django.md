@@ -36,5 +36,5 @@ DATABASES={
 
 
 ## References 
-https://blogs.oracle.com/opal/post/connecting-to-oracle-cloud-autonomous-database-with-django
-https://blogs.oracle.com/opal/post/part-1-docker-for-oracle-database-applications-in-nodejs-and-python
+* https://blogs.oracle.com/opal/post/connecting-to-oracle-cloud-autonomous-database-with-django <br>
+* https://blogs.oracle.com/opal/post/part-1-docker-for-oracle-database-applications-in-nodejs-and-python
