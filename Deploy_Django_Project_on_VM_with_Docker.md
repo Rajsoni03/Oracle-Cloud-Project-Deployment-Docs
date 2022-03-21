@@ -62,7 +62,8 @@ git checkout production
 ```
 
 ## Step 7 :- Build and Run Project (Container)
+```bash
 docker-compose build
 docker-compose up
- 
+```
 
