@@ -5,3 +5,5 @@
 ## 2 - CICD Pipeline Setup using Chef.io - [`Open Docs`](https://github.com/Rajsoni03/Oracle-Cloud-Project-Deployment-Docs/blob/main/DevOps_Pipeline_Setup.md)
 
 ## 3 - Oracle ATB Database Setup with Django and Docker - [`Open Docs`](https://github.com/Rajsoni03/Oracle-Cloud-Project-Deployment-Docs/blob/main/Oracle_ATB_Database_Setup_with_Django.md)
+
+## 4 - Object Stroage Bucket Setup for Django - [`Open Docs`](https://github.com/Rajsoni03/Oracle-Cloud-Project-Deployment-Docs/blob/main/Object_Storage_Bucket_with_Django_Backend.md)
