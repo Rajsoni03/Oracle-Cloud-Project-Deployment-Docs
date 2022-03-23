@@ -18,9 +18,11 @@ RUN        apt-get update && apt-get install -y libaio1 wget unzip \
 
 ## Step 3 :- Download the `Wallet ZIP` file from ATP Service Page
 
-## Step 4 :- Copy Wallet Zip file to VM Machien 
+## Step 4 :- Copy Wallet Zip file to VM Machien using WinSCP tool
 
-## Step 5 :- Extract `cwallet.sso`, `sqlnet.ora`, and `tnsnames.ora` files from Wallet
+https://winscp.net/eng/download.php
+
+## Step 5 :- Goto VM and Extract `cwallet.sso`, `sqlnet.ora`, and `tnsnames.ora` files from Wallet
 ```bash 
 unzip <wallet file>
 ```
