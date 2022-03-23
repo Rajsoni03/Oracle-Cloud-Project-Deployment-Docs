@@ -29,4 +29,4 @@ AWS_S3_REGION_NAME = "me-dubai-1" # region name
 AWS_S3_ENDPOINT_URL = "https://<namespace>.compat.objectstorage.<region>.oraclecloud.com" # add namespace and region
 AWS_QUERYSTRING_AUTH = False 
 ```
-
+## Step 5 :- Use endpoint 
