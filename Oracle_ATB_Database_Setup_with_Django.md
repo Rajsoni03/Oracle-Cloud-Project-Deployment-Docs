@@ -1,16 +1,30 @@
 # Oracle ATB Database Setup with Django and Docker
 
-## Step 1 - Create ATP Database on Oracle Cloud.
+## Step 1 :- Create ATP Database on Oracle Cloud.
 
-## Step 2 - Download the `Wallet ZIP` file from ATP Service Page
+## Step 2 :- Install Oracle Instant Client on Docker
+Add code into `Dockerfile`
+```shell
+WORKDIR    /opt/oracle
+RUN        apt-get update && apt-get install -y libaio1 wget unzip \
+            && wget https://download.oracle.com/otn_software/linux/instantclient/instantclient-basiclite-linuxx64.zip \
+            && unzip instantclient-basiclite-linuxx64.zip \
+            && rm -f instantclient-basiclite-linuxx64.zip \
+            && cd /opt/oracle/instantclient* \
+            && rm -f *jdbc* *occi* *mysql* *README *jar uidrvci genezi adrci \
+            && echo /opt/oracle/instantclient* > /etc/ld.so.conf.d/oracle-instantclient.conf \
+            && ldconfig
+```
 
-## Step 3 - Copy Wallet Zip file to VM Machien 
+## Step 3 :- Download the `Wallet ZIP` file from ATP Service Page
 
-## Step 4 - Extract `cwallet.sso`, `sqlnet.ora`, and `tnsnames.ora` files from Wallet
+## Step 4 :- Copy Wallet Zip file to VM Machien 
+
+## Step 5 :- Extract `cwallet.sso`, `sqlnet.ora`, and `tnsnames.ora` files from Wallet
 ```bash 
 unzip <wallet file>
 ```
-## Step 5 - Edit sqlora.net file
+## Step 6 :- Edit sqlora.net file
 ```bash
 vi sqlora.net
 ```
@@ -19,7 +33,7 @@ From <br>
 To <br>
 `WALLET_LOCATION = (SOURCE = (METHOD = file) (METHOD_DATA = (DIRECTORY="$TNS_ADMIN")))`
 
-## Step 6 - Connecting to Oracle Database using Django
+## Step 7 :- Connect Django Backend to Oracle ATP Database
 add following code in `settings.py` in Django project
 
 ```python
@@ -33,7 +47,6 @@ DATABASES={
     }
 }
 ```
-
 
 ## References 
 * https://blogs.oracle.com/opal/post/connecting-to-oracle-cloud-autonomous-database-with-django <br>
