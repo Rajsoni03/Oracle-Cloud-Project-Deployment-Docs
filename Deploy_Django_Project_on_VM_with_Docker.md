@@ -39,10 +39,12 @@ sudo firewall-cmd --reload
 ```
 
 ## Step 5 :- Docker Troubleshoot
+```bash
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
 sudo service docker start
+```
 
 ## Step 6 :- Git setup
 Install Git on VM
