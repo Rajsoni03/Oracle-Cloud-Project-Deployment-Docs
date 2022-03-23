@@ -1,4 +1,4 @@
-# DevOps Pipeline Setup
+# CI/CD Pipeline Setup
 
 ## Install chef.io workstation on main server
 Download chef.io package
