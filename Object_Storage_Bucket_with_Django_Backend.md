@@ -11,12 +11,20 @@ pip install django-storages
 
 ## Step 3 :- Collect connection details 
 
-#### Generate Access key
+login to https://cloud.oracle.com/ <br>
 
-#### get namespace and region
-
-#### Get endpoint url
-
+* Generate Secret Access key 
+  * Goto Profile -> oracleidentitycloudservice -> Customer Secret Keys -> `Generate Secret Key`
+  * Name the key and click on generate.
+  * Copy `Secret Access Key`, it will only show it once.
+* Generate Access Key
+  * After you create `Secret Access key` the name of the key shown in Secret Access key list
+  * Click on Access Key currenponding to your Secret Access key name
+  * Copy `Access Key`
+* Access namespace and region
+  * Goto Profile -> tenancy
+  * Under Object Storage Settings you will get Object Storage `Namespace`
+  * And the `region` name in url
 
 ## Step 4 :- Add following code in Django `setting.py` file
 
@@ -29,4 +37,4 @@ AWS_S3_REGION_NAME = "me-dubai-1" # region name
 AWS_S3_ENDPOINT_URL = "https://<namespace>.compat.objectstorage.<region>.oraclecloud.com" # add namespace and region
 AWS_QUERYSTRING_AUTH = False 
 ```
-## Step 5 :- Use endpoint 
+## Step 5 :- Use image path as 
